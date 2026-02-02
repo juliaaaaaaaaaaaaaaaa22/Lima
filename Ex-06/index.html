@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classificação</h1>
+    <h2>Rodadada 01</h2>
+    
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Ordem</th>
+                <th>Time</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="font-size: 50px;">1</td>
+                <td><img src="Corinthians.png" alt="Timão" width="100"></td>
+                <td  style="font-size: 50px;">5</td>
+                <td style="font-size: 50px;">3</td>
+            </tr>
+            <tr>
+                <td style="font-size: 50px;">2</td>
+                <td><img src="Flamengo.png" alt="Flamengo" width="100"></td>
+                <td style="font-size: 50px;">3</td>
+                <td style="font-size: 50px;">3</td>
+            </tr>
+            <tr>
+                <td style="font-size: 50px;">3</td>
+                <td><img src="Fluminense.png" alt="Fluminense" width="100"></td>
+                 <td style="font-size: 50px;">2</td>
+                 <td style="font-size: 50px;">3</td>
+            </tr>
+    
+            <tr>
+                <td style="font-size: 50px;">2</td>
+                <td><img src="Santos_Logo.png.webp" alt="Santos_Logo" width="100"></td>
+                <td style="font-size: 50px;">1</td>
+                <td style="font-size: 50px;">3</td>
+            
+            </tr>
+            
+            <tr>
+                <td style="font-size: 50px;">5</td>
+                <td><img src="botafogo.png" alt="Botafogo" width="100"></td>
+                <td style="font-size: 50px;">1</td>
+                <td style="font-size: 50px;">3</td>
+            
+            </tr>
+
+            
+        </tbody>
+
+        <tfoot>
+            
+            </tr>
+        </tfoot>
+    </table>
+     <form method="POST" action="processar.php">
+        <h1>Responda</h1>
+    <fieldset>
+        <legend>Dados de seu Time</legend>
+
+        <label for="time">Qual é seu time?</label>
+        <input type="text" id="time" name="time" required>
+
+        <br><br>
+
+        <label for="mundial">Seu time tem mundial:</label>
+        <input type="text" id="mundial" name="mundial" required>
+
+        <br><br>
+
+        
+        <label for="titulos">Quantos titulos brasileiro seu time possuí:</label>
+        <input type="number" id="titulos" name="titulos" required>
+
+        <br><br>
+
+
+        
+        <label for="comentario">Deixe seu comentário:</label>
+        <input type="text" id="comentario" name="comentario" required>
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Estou Feliz </legend>
+        <label for="termos">
+            <input type="checkbox" id="Feliz" name="Feliz" required>
+            Sou Feliz
+             <input type="checkbox" id="NaoFeliz" name="NaoFeliz" required>
+            Não Sou Feliz
+             <input type="checkbox" id="MuitoAlegre" name="MuitoAlegre" required>
+            Sou Muito Alegre
+        </label>
+
+    </fieldset>
+
+        <fieldset>
+        <legend>Pagamento </legend>
+        <label for="termos">
+            <input type="checkbox" id="CartaoCredito" name="CartaoCredito" required>
+            Cartão de Crédito
+             <input type="checkbox" id="Debito" name="Debito" required>
+            Cartão Débito
+             <input type="checkbox" id="Dinheiro" name="Dinheiro" required>
+            Pix
+             <input type="checkbox" id="ValeBombom" name="ValeBombom" required>
+            Vale Bombom
+        </label>
+
+    </fieldset>
+
+    <br><br>
+    <button type="submit">Enviar</button>
+ 
+</body>
+</html>
